@@ -11,7 +11,9 @@ public class Dice {
 	}
 
 	public DiceValue roll() {
-		return DiceValue.getRandom();
+		DiceValue d = DiceValue.getRandom();
+		value = d;
+		return d;
 	}		
 	
 	public String toString() {
