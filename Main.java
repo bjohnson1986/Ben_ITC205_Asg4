@@ -12,16 +12,9 @@ public class Main {
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
 
-        int totalWins = 0;
-        int totalLosses = 0;
-
         int winCount = 0;
         int loseCount = 0;
-        
-        int totalWagered = 0;
-        int totalWon = 0;
-        int totalLost = 0;
-        
+             
         for (int i = 0; i < 100; i++)
         {
         	String name = "Fred";
@@ -68,10 +61,8 @@ public class Main {
         } //for
         
         System.out.println(String.format("Win count = %d, Lose Count = %d, %.2f", winCount, loseCount, (float) winCount/(winCount+loseCount)));
-        totalWins += winCount;
-        totalLosses += loseCount;
 
-        System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
+        System.out.println(String.format("Overall win rate = %.1f%%", (float)(winCount * 100) / (winCount + loseCount)));
 	}
 
 }
