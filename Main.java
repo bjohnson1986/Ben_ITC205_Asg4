@@ -20,7 +20,7 @@ public class Main {
         	String name = "Fred";
         	int balance = 100;
         	int limit = 0;
-            int bet = 100;
+            int bet = 5;
             int turn = 0;
             
             player = new Player(name, balance);
